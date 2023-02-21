@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0, 0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+}

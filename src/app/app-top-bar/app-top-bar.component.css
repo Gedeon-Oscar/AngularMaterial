@@ -1,0 +1,26 @@
+
+
+
+
+.brand_frame
+{
+    display: flex;
+    justify-content: space-between;
+}
+.brand_frame #brand-name
+{
+    font-size: 2rem;
+}
+.brand_frame #checkout-btn
+{
+    background-color: black;
+    color: white;
+    border: thin solid black;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    cursor: pointer;
+}
+.brand_frame #checkout-btn i
+{
+    font-size: 1rem;
+    font-weight: bold;
+}

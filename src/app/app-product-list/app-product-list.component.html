@@ -1,0 +1,28 @@
+
+
+<div class="wrapper">
+
+    <section class="frame">
+
+        <app-app-top-bar></app-app-top-bar>
+
+        <h2>Products</h2>
+
+        <div *ngFor="let product of products">
+            <h3>
+                <a [title]="product.name + ' details'">{{ product.name }}</a>
+            </h3>
+            <p *ngIf="product.description">
+                Description: {{ product.description }}
+            </p>
+            <button type="button" id="share-btn" (click)="share()">
+                Share
+            </button>
+
+            <!--<app-app-product-alerts [product]="product"></app-app-product-alerts>-->
+
+        </div>
+
+    </section>
+
+</div>
