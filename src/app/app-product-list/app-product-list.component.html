@@ -19,10 +19,22 @@
                 Share
             </button>
 
-            <!--<app-app-product-alerts [product]="product"></app-app-product-alerts>-->
+            <!-- passing the product data to the child component -->
+            <app-app-product-alerts [product]="product"></app-app-product-alerts>
 
         </div>
 
     </section>
 
 </div>
+
+
+
+
+<!-- <div style="border: solid 1px black; padding:15px;">
+    <h3>Parent Component</h3> 
+    <app-app-product-alerts
+      [firstName]="firstName"
+      [lastName]="lastName"
+      [siblings]="siblings"></app-app-product-alerts>
+</div> -->

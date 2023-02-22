@@ -1,4 +1,5 @@
-import { Component,Input,OnInit } from '@angular/core';
+//* main
+import { Component,Input } from '@angular/core';
 //* import list
 import { Product } from "../products";
 
@@ -9,6 +10,17 @@ import { Product } from "../products";
 })
 export class AppProductAlertsComponent {
 
+  //* receving data from the parent component
   @Input() product!: Product;
 
+  //* var declaration
+  stringified_Data:any;
+  parsed_Data:any;
+
+
+  ngOnInit(): void 
+  {
+    this.stringified_Data = JSON.stringify(this.product);
+    console.log("FromAlerts: "+ this.stringified_Data );
+  }
 }
