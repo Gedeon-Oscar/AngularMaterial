@@ -1,6 +1,7 @@
 //* main
 import { Component } from '@angular/core';
-//* import list
+//* import
+
 
 @Component({
   selector: 'app-app-product-list',
@@ -14,8 +15,8 @@ export class AppProductListComponent {
   products:Array<{id:number,name:string,description:string,price:string}> =
   [
     {id:1,name: 'XL',description:'A large phone with one of the best srceens.',price:'700'},
-    {id:2,name: 'Mini',description:'A great phone with one of the best cameras.',price:''},
-    {id:3,name: 'Standard',description:'',price:''}
+    {id:2,name: 'Mini',description:'A great phone with one of the best cameras.',price:'0'},
+    {id:3,name: 'Standard',description:'',price:'0'}
   ];
 
   //* button that enables the displays that the product has been shared

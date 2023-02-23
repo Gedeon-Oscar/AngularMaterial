@@ -23,6 +23,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.product_frame
+{
+    margin-top: 1.3rem;
+}
+
 #share-btn
 {
     background-color: white;
@@ -31,4 +36,19 @@
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+a
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    cursor: pointer;
+}
+h3
+{
+    color: #00000075;
+}
+a:hover
+{
+    color: #00000075;
 }

@@ -1,0 +1,24 @@
+
+
+
+
+<div class="wrapper">
+
+    <section class="frame">
+
+        <app-app-top-bar></app-app-top-bar>
+
+        <h3>Product Details</h3>
+
+        <div *ngIf="product">
+            <h3>{{ product.name }}</h3>
+            <h4>{{ product.price | currency }}</h4>
+            <p>{{ product.description }}</p>
+        </div>
+
+        
+    </section>
+
+</div>
+
+
