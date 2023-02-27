@@ -1,0 +1,27 @@
+
+
+
+
+
+<div class="wrapper">
+
+    <section class="frame">
+
+        <app-app-top-bar></app-app-top-bar>
+
+        <h3>Cart</h3>
+
+        
+        <a routerLink="/shipping" style="display: flex;">
+            <h6>Shipping Prices<i class="uil uil-pricetag-alt"></i></h6>
+        </a>
+
+        <div class="cart-item" *ngFor="let item of items">
+            <span>{{ 'Phone '+item.name }}</span>
+            <span style="margin-left: o.2rem;">{{  item.price | currency }}</span>
+        </div>
+
+        
+    </section>
+
+</div>

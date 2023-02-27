@@ -17,33 +17,25 @@ export class AppProductAlertsComponent {
   //* receving data from the parent component
   @Input() product!: Product;
 
-  //X = JSON.parse(this.product);
-
-  //*
-  Sequential(){}
-
   ngOnInit(): void 
   {
-    this.stringified_Data = JSON.stringify(this.product);
-    //console.log("FromAlerts: "+ this.stringified_Data );
-    
+
     //*
-    let array = [ this.stringified_Data ]; array.forEach((element) => {
-      
-      return this.parsed_Data = JSON.parse(element);
-      //return console.log(this.parsed_Data);
-      console.log("PRICE: " +this.parsed_Data.price);
+    this.stringified_Data = JSON.stringify(this.product);
+    this.parsed_Data = JSON.parse(this.stringified_Data);
+    this.product.price =  this.parsed_Data.price;
+    return this.product.price;
 
-      if ( this.parsed_Data.price === '700' ) {
-        console.log('SUCCESS');
-         return this.product.price = this.parsed_Data.price;
-        //this.product.price = '700'; 
-      } else {
-        console.log('FAILURE');
-      }
-      
-    });
-
+    /*
+    if( this.product.price === 700)
+    {
+      //console.log('Success');
+    }else
+    {
+      console.log( 'Error' );
+    }
+    */
+    
   }
 
 }
