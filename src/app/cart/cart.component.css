@@ -10,3 +10,26 @@
     background-color: #f7f7f7;
     border-radius: 0.5rem;
 }
+
+.checkoutForm
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+.checkoutForm .input-container input
+{
+    display:block;
+    margin-top: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.744);
+    border-radius: 1rem;
+}
+.checkoutForm .button
+{
+    margin-top: 1rem;
+}
+.starCase
+{
+    color: rgb(255, 0, 0);
+}
